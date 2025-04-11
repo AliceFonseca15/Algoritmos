@@ -1,17 +1,15 @@
-def primo(num,div):
-    divisores = 0
-    if div == 1:
+numero = int(input())
+divisor = 1
+divisores = 0
+while divisor <= numero:
+    if numero % divisor == 0:
         divisores += 1
-        return divisores 
-    if num % div == 0:
-        divisores += 1
-    a = primo(num,div - 1)
-            
-valor = int(input())
-r = primo(valor,valor)
+    divisor += 1
 
-print(r)
-
+if divisores > 2:
+    print("Não é primo")
+else:
+    print("Primo")
 
         
 
