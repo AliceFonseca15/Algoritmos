@@ -16,4 +16,3 @@ for i in range(1,len(lista)):
 
 maior = max(nova_lista)
 print(maior)
-
