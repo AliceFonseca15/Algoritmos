@@ -6,4 +6,3 @@ for i in range(0,len(lista) - 1):
         maior = a
     
 print(maior)
-
