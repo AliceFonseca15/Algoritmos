@@ -9,3 +9,4 @@ if contador > 0:
     print("Não está ordenado de forma  não decrescente")
 else:
     print("Está ordenado de forma não decrescente")
+    
