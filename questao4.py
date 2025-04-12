@@ -10,7 +10,3 @@ if divisores > 2:
     print("Não é primo")
 else:
     print("Primo")
-
-        
-
-
