@@ -1,32 +1,25 @@
-#include <iostream>
 #include <iomanip>
+#include <iostream>
 
-int postes(int metros,int distancia){
-  int contagem = 0;
-  int m = 0;
-   while(m <= metros){
-     m += distancia;
-     contagem += 1;
-   }
-     return contagem;
-  }
+int postes(int metros, int distancia) {
+  int poste = metros / distancia;
+  return poste;
+}
 
-int main(){
-    int metros;
-    int distancia;
-    int d_final;
-    int v_final;
-    std:: cin >> metros >> distancia;
-    int result = postes(metros,distancia);
-    std:: cout << result <<std::endl;
-    if (metros * (result - 1) < metros){
-      d_final = metros * (result - 1);
-      v_final = metros - d_final;
-      std::cout << v_final << std::endl; 
-      result += 1;
-    }
-    else{
-      std::cout << distancia <<std::endl;
-    }
-    return 0;
+int d_final(int metros, int distancia, int poste) {
+  int v_final = metros - (distancia * poste);
+  return v_final;
+}
+
+int main() {
+  int metros;
+  int distancia;
+  int m_final;
+  int poste;
+  std::cin >> metros >> distancia;
+  poste = postes(metros, distancia);
+  m_final = d_final(metros, distancia, poste);
+  std::cout << (poste + 2)<< std::endl;
+  std::cout << m_final << std::endl;
+  return 0;
 }
