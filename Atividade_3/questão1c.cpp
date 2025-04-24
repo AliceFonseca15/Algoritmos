@@ -13,7 +13,7 @@ unsigned int n;
 std::cin >> n;
 int a[n];
 for (unsigned int i = 0; i < n; ++i) {
-std::cin >> a[i];
+std::cin >> i;
 }
 int maior = maior_array(a, n);
 std::cout << maior << std::endl;

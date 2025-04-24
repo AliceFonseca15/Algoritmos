@@ -14,7 +14,7 @@ int impares(int list[100]){
 int main(){
   int lista[100];
   std::cin >> lista;
-  int impar = impares(lista[]);
+  int impar = impares(lista);
   std:: cout << impar << std::endl;
   
 }
