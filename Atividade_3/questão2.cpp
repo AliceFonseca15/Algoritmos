@@ -1,20 +1,24 @@
 #include <iostream>
 
-int impares(int list[100]){
-  int i;
-  int contagem = 0;
-  for (i = 0; i < 100;i++){
-    if (list[i] % 2 != 0){
-      contagem += 1;
+int impares(int lista[], int n) {
+    int contagem = 0;
+    for (int i = 0; i < n; i++) {
+        if (lista[i] % 2 != 0) {
+            contagem += 1;
+        }
     }
-  return contagem;
-  }
+    return contagem;
 }
+int main() {
+    int n;
+    std::cin >> n;
+    int lista[n];
 
-int main(){
-  int lista[100];
-  std::cin >> lista;
-  int impar = impares(lista);
-  std:: cout << impar << std::endl;
-  
+    for (int i = 0; i < n; i++) { 
+        std::cin >> lista[i];
+    }
+
+    int impar = impares(lista, n);
+    std::cout << impar << std::endl;
+    return 0;
 }
