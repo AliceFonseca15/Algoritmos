@@ -1,5 +1,4 @@
 #include <iostream>
-#include <iostream>
 int maior_array(int a[], unsigned int n) {
     int indice_maior = 0;
     for (unsigned int i = 1; i < n; ++i) {
