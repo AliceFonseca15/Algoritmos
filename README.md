@@ -1,2 +1,2 @@
 # Algoritmos
-Repositório da disciplina de Algoritmos - Segundo semestre
+Repositório da disciplina de Algoritmos - Segundo período
